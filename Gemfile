@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
+gem 'httparty'
+gem "space_register", git: "git@github.com:carolinakarklis/space_register.git", branch: "main"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
