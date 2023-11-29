@@ -1,0 +1,26 @@
+<h1>Novo foguete</h1>
+
+<%= form_for @rocket do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :km_per_hour %>:
+  <%= f.text_field :km_per_hour %><br />
+
+  <%= f.label :agency_id %>:
+  <%= f.text_field :agency_id %><br />
+
+  <%= f.label :fuel_days %>:
+  <%= f.text_field :fuel_days %> <br />
+
+  <%= f.label :load_type_name %>:
+  <%= f.text_field :load_type_name %> <br />
+
+  <%= f.label :load_type_weight %>:
+  <%= f.text_field :load_type_weight %> <br />
+
+  <%= f.label :load_type_description %>:
+  <%= f.text_field :load_type_description %> <br />
+
+  <%= f.submit %>
+<% end %>

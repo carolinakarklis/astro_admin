@@ -1,0 +1,8 @@
+<h1> Veículos </h1>
+
+<%= link_to "Novo foguete", new_rocket_path %>
+
+<% @vehicles.data.each do |vehicle| %>
+  <p> <%= vehicle.name %> </p>
+  <p> Número de viagens: <%= vehicle.travel_count %> </p>
+<% end %>
