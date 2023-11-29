@@ -1,0 +1,12 @@
+<h1> Viagens </h1>
+
+<%= link_to "Nova viagem", new_space_travel_path %>
+
+<% @travels.data.each do |travel| %>
+  <p> Viagem para o planeta ID <%= travel.planet_id %> </p>
+  <p> Data de início: <%= travel.start_at.to_datetime.strftime("%d/%m/%y: %H:%M:%S %Z") %> </p>
+  <p> Status: <%= travel.status %> </p>
+  <p> Descrição: <%= travel.mission_description %> </p>
+
+  <hr>
+<% end %>

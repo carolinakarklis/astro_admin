@@ -1,0 +1,17 @@
+<h1>Nova viagem</h1>
+
+<%= form_for @travel do |f| %>
+  <%= f.label :planet_id %>:
+  <%= f.text_field :planet_id %><br />
+
+  <%= f.label :space_vehicle_id %>:
+  <%= f.text_field :space_vehicle_id %><br />
+
+  <%= f.label :mission_description %>:
+  <%= f.text_field :mission_description %><br />
+
+  <%= f.label :start_at %>:
+  <%= f.datetime_field :start_at %> <br />
+
+  <%= f.submit %>
+<% end %>

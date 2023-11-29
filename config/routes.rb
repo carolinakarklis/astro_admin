@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   resources :space_vehicles, only: :index
   resources :rockets, only: [:new, :create]
+  resources :space_travels, only: [:index, :new, :create]
 end
